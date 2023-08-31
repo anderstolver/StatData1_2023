@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Anders Tolver" />
+
+
+<title>Kursusplan</title>
+
+<script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Statistisk Dataanalyse 1</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Praktiske oplysninger</a>
+</li>
+<li>
+  <a href="kursusplan.html">Kursusplan</a>
+</li>
+<li>
+  <a href="R.html">R</a>
+</li>
+<li>
+  <a href="data.html">Data</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Opgaver
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://github.com/anderstolver/StatData1_2023/tree/main/docs/opgaver">Fra ovelsestimer</a>
+    </li>
+    <li>
+      <a href="https://github.com/anderstolver/StatData1_2023/tree/main/docs/eksamensopgaver">Gamle eksamensopgaver</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Kursusplan</h1>
+<h4 class="author">Anders Tolver</h4>
+
+</div>
+
+<div id="TOC">
+<ul>
+<li><a href="#oversigt-over-undervisningen"
+id="toc-oversigt-over-undervisningen">Oversigt over undervisningen</a>
+<ul>
+<li><a href="#liste-over-gennemgået-pensum"
+id="toc-liste-over-gennemgået-pensum">Liste over gennemgået
+pensum</a></li>
+</ul></li>
+<li><a href="#program-for-enkelte-uger"
+id="toc-program-for-enkelte-uger">Program for enkelte uger</a>
+<ul>
+<li><a href="#uge1" id="toc-uge1">Kursusuge 1</a>
+<ul>
+<li><a href="#generel-info" id="toc-generel-info">Generel info</a></li>
+<li><a href="#forelæsninger"
+id="toc-forelæsninger">Forelæsninger</a></li>
+<li><a href="#øvelsestimer" id="toc-øvelsestimer">Øvelsestimer</a></li>
+</ul></li>
+<li><a href="#uge2" id="toc-uge2">Kursusuge 2</a></li>
+</ul></li>
+</ul>
+</div>
+
+<hr />
+<div id="oversigt-over-undervisningen" class="section level1">
+<h1>Oversigt over undervisningen</h1>
+<p>Skemaet giver en grov foreløbig plan for undervisningen. Planen og
+linket (til højre for hver kursusdag) med detaljerede oplysninger
+opdateres løbende for hver enkelt undervisningsgang.</p>
+<table>
+<colgroup>
+<col width="30%" />
+<col width="9%" />
+<col width="15%" />
+<col width="21%" />
+<col width="24%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Kursusuge</th>
+<th>Dag</th>
+<th>Emner</th>
+<th>Lærebog</th>
+<th>Detaljer</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Mandag (4/9)</td>
+<td>Introduktion, R, Deskriptiv statistik</td>
+<td>Ch. 1</td>
+<td><a href="#uge1">link</a></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Onsdag (6/9)</td>
+<td>Intro til lineær regression og ensidet ANOVA</td>
+<td>Ch. 2+3.1-3.3(+3.7)</td>
+<td><a href="#uge1">link</a></td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>Mandag (11/9)</td>
+<td></td>
+<td></td>
+<td>link</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Onsdag (13/9)</td>
+<td></td>
+<td></td>
+<td>link</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Mandag (18/9)</td>
+<td></td>
+<td></td>
+<td>link</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>Onsdag (20/9)</td>
+<td></td>
+<td></td>
+<td>link</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>Mandag (25/9)</td>
+<td></td>
+<td></td>
+<td>link</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Onsdag (27/9)</td>
+<td></td>
+<td></td>
+<td>link</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Mandag (2/10)</td>
+<td></td>
+<td></td>
+<td>link</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>Onsdag (4/10)</td>
+<td></td>
+<td></td>
+<td>link</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td>Mandag (9/10)</td>
+<td></td>
+<td></td>
+<td>link</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Onsdag (11/10)</td>
+<td></td>
+<td></td>
+<td>link</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>Mandag (23/10)</td>
+<td></td>
+<td></td>
+<td>link</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td>Onsdag (25/10)</td>
+<td></td>
+<td></td>
+<td>link</td>
+</tr>
+<tr class="odd">
+<td>8</td>
+<td>Mandag (30/10)</td>
+<td></td>
+<td></td>
+<td>link</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<!-- ## Liste over gamle eksamensopgaver, som har været benyttet på kurset
+
+Nedenfor kan du se, hvilke eksamensopgaver, der er blevet regnet i løbet af kurset. Husk at fra ca. 2018 har Opgave 3 i hvert eksamenssæt været en *multiple choice opgave* (som du også bør træne på op til eksamen).
+
+Eksamenssæt | Opgave 1 | Opgave 2 
+:------------|:----------|:----------
+Februar 2022 | |
+November 2021 | | kursusuge 6, mandag
+Februar 2021 | afleveringsopgave 1 |
+November 2020 | |
+Januar 2020 | kursusuge 6, onsdag | kursusuge 6, onsdag 
+November 2019 | kursusuge 8, mandag | kursusuge 8, mandag
+Januar 2019 |  afleveringsopgave 3  | afleveringsopgave 2
+November 2018 | kursusuge 7, mandag | kursusuge 5, onsdag 
+Januar 2018 | kursusuge 7, onsdag  | kursusuge 5, onsdag 
+
+
+Desuden har regnet følgende opgaver fra før 2018:
+
+
+* November 2017, Opgave 2: kursusuge 5, mandag
+
+* November 2017, Opgave 3: kursusuge 6, mandag
+
+* November 2017, Opgave 4: delspørgsmål 1, kursusuge 8, mandag
+
+***
+-->
+<div id="liste-over-gennemgået-pensum" class="section level2">
+<h2>Liste over gennemgået pensum</h2>
+<p>Følgende afsnit fra lærebogen er gennemgået
+<!--i kursusuge 1-7--></p>
+<!--
+* Chapter 1: Datatyper, visualisering og deskriptiv statistik
+
+* Chapter 2: Introduktion til lineær regression
+
+* Chapter 3: Sammenligning af grupper og introduktion til ensidet variansanalyse (kun 3.1-3.3 + 3.7 indtil videre)
+
+* Chapter 4: Normalfordelingen. Nogle af de mere teoretiske ting omkring Infobox 4.2, 4.3 og 4.5 illustreres primært gennem eksempler (computersimulationer). Afsnit 4.4. er kun kursorisk. 
+
+* Chapter 5.3.1-5.3.3: Konfidensintervaller med fokus på konstruktion af konfidensintervaller for middelværdien i en sample (*one sample problem*)
+
+* Chapter 5.1-5.2: Generelle statistisk begreber (statistisk model, estimation) med fokus på lineær regression og ensidet ANOVA.
+
+* Chapter 6.1-6.2: Hypotesetest med særlig fokus på t-test.
+
+* Chapter 6.3-6.4: Om F-test med udgangspunkt i sammensatte hypoteser (flere grupper på en gang) i ensidet ANOVA
+
+* Chapter 6.5: Om fejl af type I og II i forbindelse med hypotesetest. Afsnit 6.5.1 skal opfattes *kursorisk pensum*, som der ikke stilles eksamensopgaver i.
+
+* Chapter 7: Modelkontrol og prædiktion i forbindelse med modeller fittet med `lm()` funktionen i R
+
+* Chapter 8.1: Multipel lineær regression
+
+* Chapter 8.2, 8.3, 8.4.1, 8.4.2: Om tosidet ANOVA og blandede modeller (både kontinuerte og kategoriske forklarende variable). Afsnittene 8.2.2 og 8.4.3 er ikke pensum.
+
+* Chapter 11: Om binomialfordelingen
+
+* Chapter 12: Om analyse af antalstabeller (dog ikke afsnit 12.2.3 og 12.2.4)
+-->
+</div>
+</div>
+<div id="program-for-enkelte-uger" class="section level1">
+<h1>Program for enkelte uger</h1>
+<hr />
+<div id="uge1" class="section level2">
+<h2>Kursusuge 1</h2>
+<div id="generel-info" class="section level3">
+<h3>Generel info</h3>
+<p>Ud over at følge de skemalagte undervisningsaktiviteter bør du i
+kursusuge 1</p>
+<ul>
+<li><p>læse den <a
+href="https://anderstolver.github.io/StatData1_2023/index.html">praktiske
+information om kurset</a></p></li>
+<li><p>installere de nyeste versioner af <a
+href="https://cran.r-project.org">R</a> og <a
+href="https://www.rstudio.com/products/rstudio/download/">R Studio</a>
+på din computer</p></li>
+<li><p>anskaffe dig et eksemplar af lærebogen <em>Claus Thorn Ekstrøm
+&amp; Helle Sørensen:</em> <strong>Statistical Data Analysis for the
+Life Sciences (Second Edition)</strong></p></li>
+</ul>
+<p>Du kan vælge at læse eller orientere dig i lærebogens kapitel 1 inden
+første forelæsning, men det burde ikke være nødvendigt for at følge med.
+Til senere forelæsninger vil det generelt være min anbefaling, at I
+bruger tid på at læse de relevante kapitler på forhånd.</p>
+<p>Bemærk desuden, at der sikkert er stillet flere opgaver end du kan nå
+i timerne, og at du skal lave resten derhjemme. Husk at du forventes at
+arbejde 20 timer om ugen med kurset, for at få fuldt udbytte af
+undervisningen.</p>
+</div>
+<div id="forelæsninger" class="section level3">
+<h3>Forelæsninger</h3>
+<div id="forelæsninger-mandag-ca.-kl.-1300-1445-i-aud-a2-82.01"
+class="section level4">
+<h4>Forelæsninger mandag ca. kl. 13:00-14:45 i aud-A2-82.01</h4>
+<p>Emner</p>
+<ul>
+<li>Introduktion til kurset og motivation
+<ul>
+<li>Hvad er statistik og hvad går det ud på?</li>
+<li>Hvilken slags data skal vi arbejde med?</li>
+<li>Hvad er Statistisk Dataanalyse?</li>
+</ul></li>
+<li>Praktiske oplysninger
+<ul>
+<li>Struktur af undervisning og undervisningsmateriale</li>
+<li>Hvad kan I forvente af underviserne?</li>
+<li>Hvad forventer vi af jer?</li>
+</ul></li>
+<li>Genopfriskning af R</li>
+<li>Kapitel 1: Datatyper, deskriptiv statistik</li>
+</ul>
+<p>Slides til dagens forelæsning: <strong>Lægges typisk op umiddelbart
+før forelæsningen!</strong> <!--
+[fuld version](slides/sd1_forel230904_long.pdf) - [kort version: 4 slides per side](slides/sd1_forel230904_short.pdf) 
+
+R-program fra forelæsning d. 4/9-2023: [output](R/Rprog230904.html) - [R Markdown](R/Rprog230904.Rmd). Hvis du har problemer med at hente `.Rmd`-filerne ned, så kan du prøve [her](https://github.com/anderstolver/StatData1_2023/tree/main/docs/R).
+
+--></p>
+</div>
+<div id="forelæsninger-onsdag-ca.-kl.-1000-1145-i-aud-a2-82.01"
+class="section level4">
+<h4>Forelæsninger onsdag ca. kl. 10:00-11:45 i aud-A2-82.01</h4>
+<p>Jeg forsøger at give en kort introduktion til to populære statistiske
+modeller</p>
+<ul>
+<li>den lineære regressionsmodel</li>
+<li>den ensidede variansanalysemodel</li>
+</ul>
+<p>Jeg vil bruge mindre energi på de matematiske detaljer end der er
+lagt op til i bogen. Det vigtigste er at forstå problemstillingerne,
+princippet om mindste kvadraters metode, samt begreber som variation,
+forventede værdier, population, stikprøve.</p>
+<ul>
+<li>Kapitel 2: Intro til lineær regression og korrelation</li>
+<li>Kapitel 3.1-3.3+3.7: Intro til ensidet ANOVA</li>
+</ul>
+<p>Slides til dagens forelæsning: <strong>Lægges typisk op umiddelbart
+før forelæsningen!</strong>
+<!--[fuld version](slides/sd1_forel230906_long.pdf) - [kort version: 4 slides per side](slides/sd1_forel230906_short.pdf)
+
+R-program fra forelæsning d. 6/9-2023: [output](R/Rprog230906.html) - [R Markdown](R/Rprog230906.Rmd). Hvis du har problemer med at hente `.Rmd`-filerne ned, så kan du prøve [her](https://github.com/anderstolver/StatData1_2023/tree/main/docs/R).
+
+--></p>
+</div>
+</div>
+<div id="øvelsestimer" class="section level3">
+<h3>Øvelsestimer</h3>
+<div id="øvelser-mandag-ca.-kl.-15.00-16.45" class="section level4">
+<h4>Øvelser mandag ca. kl. 15.00-16.45</h4>
+<p>Vær opmærksom på, at du kan læse mere om øvelseshold og lokaler i
+afsnittet om <em>Øvelsestimer</em> på siden med <a
+href="https://anderstolver.github.io/StatData1_2023/index.html">Praktiske
+oplysninger</a>.</p>
+<p>HS-opgaver kan findes <a
+href="https://github.com/anderstolver/StatData1_2023/tree/main/docs/opgaver">her</a>.
+De øvrige opgaver er fra lærebogen.</p>
+<ul>
+<li>Opgave HS.1: Om at arbejde med R og RStudio. Hvis du har helt styr
+på hvordan du gebærder dig i R, kan du springe opgaven over.</li>
+<li>Opgave 1.1: Datatyper</li>
+<li>Opgave 1.2: Summary measures. Kommentarer:
+<ul>
+<li><ol style="list-style-type: lower-alpha">
+<li>Du må gerne bruge R, men vær sikker på at du forstår hvad der
+foregår!</li>
+</ol></li>
+<li><ol start="2" style="list-style-type: lower-alpha">
+<li>Se sidste spørgsmål i HS.1 for hvordan du kan indlæse data til
+R.</li>
+</ol></li>
+<li><ol start="3" style="list-style-type: lower-alpha">
+<li>Man kan tænke på første kvartil som medianen i deldatasættet der
+inkluderer observationerne fra den mindste observation til
+medianen.</li>
+</ol></li>
+</ul></li>
+<li>Opgave 1.9. Summary measures, fortsættelse af opgave 1.2</li>
+<li>Opgave 1.7, men kun spørgsmål 1-4: Histogram og boxplot i R</li>
+<li>Opgave 1.8: Histogrammer og boxplots</li>
+</ul>
+</div>
+<div id="øvelser-onsdag-ca.-kl.-13.00-15.45" class="section level4">
+<h4>Øvelser onsdag ca. kl. 13.00-15.45</h4>
+<p>HS-opgaver kan findes <a
+href="https://github.com/anderstolver/StatData1_2023/tree/main/docs/opgaver">her</a>.
+De øvrige opgaver er fra lærebogen.</p>
+<ul>
+<li>Opgave HS.2: Om installation af R-pakker, datasæt fra pakker</li>
+<li>Opgave HS.3: Om datasæt og variable i R</li>
+<li>Opgave 2.3, men kun spørgsmål 1-7: Lineær regression og
+korrelation</li>
+<li>Opgave 2.7: Korrelation</li>
+<li>Opgave HS.4: Ensidet ANOVA</li>
+<li>Opgave 3.1: Ensidet ANOVA</li>
+</ul>
+<hr />
+</div>
+</div>
+</div>
+<div id="uge2" class="section level2">
+<h2>Kursusuge 2</h2>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -245,10 +245,30 @@ $(document).ready(function () {
         <li>
   <a href="index.html">Praktiske oplysninger</a>
 </li>
-<li class="dropdown-header">Kursusplan</li>
-<li class="dropdown-header">R</li>
-<li class="dropdown-header">Data</li>
-<li class="dropdown-header">Opgaver</li>
+<li>
+  <a href="kursusplan.html">Kursusplan</a>
+</li>
+<li>
+  <a href="R.html">R</a>
+</li>
+<li>
+  <a href="data.html">Data</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Opgaver
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://github.com/anderstolver/StatData1_2023/tree/main/docs/opgaver">Fra ovelsestimer</a>
+    </li>
+    <li>
+      <a href="https://github.com/anderstolver/StatData1_2023/tree/main/docs/eksamensopgaver">Gamle eksamensopgaver</a>
+    </li>
+  </ul>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         
@@ -373,11 +393,8 @@ skemaside</a>.</p>
 </div>
 <div id="plan-over-kursusaktiviteter" class="section level2">
 <h2>Plan over kursusaktiviteter</h2>
-<p>For en detaljeret plan over kursusaktiviteter henvises til
-<strong>kursusplanen (link kommer ca. 1/9)</strong></p>
-<!--
-[kursusplan](https://anderstolver.github.io/StatData1_2023/kursusplan.html).
--->
+<p>For en detaljeret plan over kursusaktiviteter henvises til <a
+href="https://anderstolver.github.io/StatData1_2023/kursusplan.html">kursusplanen</a>.</p>
 <p>Jeg vil som udgangspunkt annocere detaljerne i kursusplanen for den
 kommende uge torsdag eftermiddag (i den foregående uge). Jeg vurderer
 løbende hvordan kurset skrider frem, og det er derfor ikke muligt at
@@ -479,23 +496,40 @@ deltagerantal, og I er automatisk på tilfældig måde blevet inddelt på
 øvelseshold. Jeg er ligeglad med, om I organiserer jer anderledes (fx.
 hvis I har ønsker om, hvem I gerne vil på hold med), blot jeg ikke skal
 blandes ind i dette :-)</p>
-<p><strong>Supplerende oplysninger omkring lokaler og bemanding af
-øvelseslokaler lægges ud her, når kommer nærmere
-kursusstart.</strong></p>
-<!--
-I praksis foregår øvelsesundervisningen i lokaler af varierende størrelse, så der kan være lokaler som rummer flere hold og er bemandet med flere hjælpelærere. Forsøg at fordele jer, så der er ca. dobbelt så mange studerende i de lokaler, hvor der er to hjælpelærere. 
-
-I kan se en oversigt over de tildelte lokaler via følgende [link](https://skema.ku.dk/tt/tt.asp?SDB=KU2223&language=DK&folder=Reporting&style=textspreadsheet&type=module&idtype=id&id=111333&weeks=6&days=1-5&periods=1-68&width=0&height=0&template=SWSCUST2+module+textspreadsheet).
-
-* Hold 1, mandag, **øv - A1-01.17, Bülowsvej 17, Frederiksberg**: lokale dimensioneret til 38 studerende
-* Hold 1, onsdag, **øv - A2-71.01, Thorvaldsensvej 40, Frederiksberg**: lokale dimensioneret til 30 studerende
-* Hold 2+6, **øv - A2-84.-12, Thorvaldsensvej 40, Frederiksberg**: større lokale dimensioneret til 70 studerende
-* Hold 3, **øv - A2-74.11,Rolighedsvej 26, Frederiksberg**: lokale dimensioneret til 30 studerende 
-* Hold 4+5, **øv - A2-84.-11, Thorvaldsensvej 40, Frederiksberg**: større lokale dimensioneret til 70 studerende
-
-Lokalerne A2-84.-11 (Hold 4+5) og A2-84.-12 (Hold 2+6) ligger så tæt på hinanden, at I må prøve fra gang til gang at fordele jer ud i lokalerne på en fornuftig måde. Der vil være 3-4 hjælpelærere til at dække disse to lokaler. I de øvrige to lokaler vil der være 1 hjælpelærer per lokale.
-
--->
+<p>I praksis foregår øvelsesundervisningen i lokaler af varierende
+størrelse, så der kan være lokaler som rummer flere hold og er bemandet
+med flere hjælpelærere. Forsøg at fordele jer, så der er ca. dobbelt så
+mange studerende i de lokaler, hvor der er to hjælpelærere.</p>
+<p>Nedenstående oversigt er vejledende (gør mig venligst opmærksom på
+fejl!)</p>
+<ul>
+<li>Hold 1:
+<ul>
+<li>mandag (uge 36-44): <strong>lokale A2-71.01</strong></li>
+<li>onsdag (uge 36-43): <strong>lokale A2-71.01</strong></li>
+</ul></li>
+<li>Hold 2:
+<ul>
+<li>mandag (uge 36-44): <strong>lokale A2-70.01</strong></li>
+<li>onsdag (uge 36+38+40): <strong>lokale A2-70.01</strong></li>
+<li>onsdag (uge 37+39+41): <strong>lokale A2-84.-12</strong></li>
+<li>onsdag (uge 43): <strong>lokale A2-11.01</strong></li>
+</ul></li>
+<li>Hold 3:
+<ul>
+<li>mandag (uge 36-44): <strong>lokale A2-71.02</strong></li>
+<li>onsdag (uge 36-43): <strong>lokale A2-71.02</strong></li>
+</ul></li>
+<li>Hold 4+5:
+<ul>
+<li>mandag (uge 36-44): <strong>lokale A2-70.02</strong></li>
+<li>onsdag (uge 36+48+40+43): <strong>lokale A2-70.02</strong></li>
+<li>onsdag (uge 37+39+41): <strong>lokale A2-82.-11</strong></li>
+</ul></li>
+</ul>
+<p>I kan altid se en aktuel oversigt over lokalesituationen via følgende
+<a
+href="https://skema.ku.dk/tt/tt.asp?SDB=KU2324&amp;language=DK&amp;folder=Reporting&amp;style=textspreadsheet&amp;type=module&amp;idtype=id&amp;id=118813&amp;weeks=6&amp;days=1-5&amp;periods=1-68&amp;width=0&amp;height=0&amp;template=SWSCUST2+module+textspreadsheet">link</a>.</p>
 </div>
 <div id="afleveringsopgaver" class="section level2">
 <h2>Afleveringsopgaver</h2>
