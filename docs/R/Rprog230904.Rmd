@@ -19,6 +19,7 @@ Datasættet `cats` ligger i R pakken MASS og skal loades før brug
 ```{r}
 library(MASS)
 data(cats)
+cats
 ```
 
 
