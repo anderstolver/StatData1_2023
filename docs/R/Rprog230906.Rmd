@@ -67,7 +67,7 @@ For to (grupper af) katte med en forskel på 1 kg i kropsvægt, så vil vi alt a
 
 ## Indtegn fittet regressionslinje på scatterplot
 
-Med standardgrafik kan man tegne et scatterplot, men regresssionslinje indtegnet på følgende måde
+Med standardgrafik kan man tegne et scatterplot med regresssionslinjen indtegnet på følgende måde
 
 ```{r}
 plot(cats$Bwt, cats$Hwt, xlab = "Bodyweight(kg)", ylab = "Heart weight (g)", main = "Cats data")
