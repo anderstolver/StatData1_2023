@@ -36,6 +36,7 @@ Bemærk at vi kun udvælger to variable fra datasættet: `kon` og `hojde`. Den t
 library(readxl)
 studData2 <- read_excel("../data/stud2017-v2.xls")
 studData2 <- studData2[,  c("kon", "hojde")]
+studData2
 head(studData2)
 table(studData2$kon)
 ```
@@ -59,7 +60,6 @@ mData <- filter(studData2, kon=="Mand")
 
 
 ***
-
 
 ## Histogram over kvinders højder
 
@@ -110,7 +110,7 @@ pnorm(160, mean=168.52, sd=6.64)
 ### P(Y <= 155)
 pnorm(155, mean=168.52, sd=6.64) 
 
-### P(Y < 155 <= 160)
+### P(155 < Y <= 160)
 pnorm(160, mean=168.52, sd=6.64) - pnorm(155, mean=168.52, sd=6.64) 
 
 ### P(Y <= 160) via N(0,1)-fordelt variabel Z:
