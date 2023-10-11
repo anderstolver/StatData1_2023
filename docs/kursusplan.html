@@ -358,6 +358,8 @@ info</a></li>
 id="toc-forelæsninger-5">Forelæsninger</a></li>
 <li><a href="#øvelsestimer-5"
 id="toc-øvelsestimer-5">Øvelsestimer</a></li>
+<li><a href="#aflevering3" id="toc-aflevering3">Frivillig
+afleveringsopgave til mandag d. 23/10-2023</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -526,7 +528,7 @@ til eksamen).</p>
 </tr>
 <tr class="even">
 <td align="left">November 2022</td>
-<td align="left"></td>
+<td align="left">afleveringsopgave 3</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
@@ -561,7 +563,7 @@ til eksamen).</p>
 </tr>
 <tr class="odd">
 <td align="left">Januar 2019</td>
-<td align="left"><!--afleveringsopgave 3--></td>
+<td align="left"></td>
 <td align="left">afleveringsopgave 2</td>
 </tr>
 <tr class="even">
@@ -588,7 +590,7 @@ til eksamen).</p>
 </div>
 <div id="liste-over-gennemgået-pensum" class="section level2">
 <h2>Liste over gennemgået pensum</h2>
-<p>Følgende afsnit fra lærebogen er gennemgået i kursusuge 1-5</p>
+<p>Følgende afsnit fra lærebogen er gennemgået i kursusuge 1-6</p>
 <!--i kursusuge 1-7-->
 <ul>
 <li><p>Chapter 1: Datatyper, visualisering og deskriptiv
@@ -1498,17 +1500,40 @@ regression.</p></li>
 <li><p>Opgave 8.9. Dette er en fortsættelse af opgave 6.6 som I regnede
 i kursusuge 3.</p></li>
 </ul>
-<!--
-### Frivillig afleveringsopgave til mandag d. 23/10-2023 {#aflevering3}
-
-Det er frivilligt at aflevere opgaven, men det er god eksamenstræning og en mulighed for at få feedback på jeres måde at formulere jer på. Hvis du har spørgsmål, så er du velkommen til at bruge diskussionsforum i Absalon.  Opgaven skal afleveres elektronisk som en pdf-fil, der uploades i Absalon. Du må naturligvis gerne lave opgaven i en gruppe, men så må I gerne nøjes med at uploade een besvarelse per gruppe.
-
-Du må gerne nøjes med at aflevere noget af opgaven.
-
-* Januar 2019, opgave 1 (Data til opgaven findes under linket [Data](data.html) øverst på kursushjemmesiden)
--->
-<hr />
 </div>
+</div>
+<div id="aflevering3" class="section level3">
+<h3>Frivillig afleveringsopgave til mandag d. 23/10-2023</h3>
+<p>Det er frivilligt at aflevere opgaven, men det er god eksamenstræning
+og en mulighed for at få feedback på jeres måde at formulere jer på.
+Hvis du har spørgsmål, så er du velkommen til at bruge diskussionsforum
+i Absalon. Opgaven skal afleveres elektronisk som en pdf-fil, der
+uploades i Absalon. Du må naturligvis gerne lave opgaven i en gruppe,
+men så må I gerne nøjes med at uploade een besvarelse per gruppe.</p>
+<p>Du må gerne nøjes med at aflevere noget af opgaven.</p>
+<ul>
+<li>November 2022, opgave 1 (Data til opgaven findes under linket <a
+href="data.html">Data</a> øverst på kursushjemmesiden)</li>
+</ul>
+<p>Opgaven er stillet fordi den kommer igennem mange af de modeller, vi
+har diskuteret på de første 6 uger af kurset.</p>
+<ul>
+<li>Spørgsmål <strong>1.-3.</strong>: handler om ensidet ANOVA</li>
+<li>Spørgsmål <strong>4.-5.</strong>: handler om lineær regression</li>
+<li>Spørgsmål <strong>6.</strong>: handler om tosidet ANOVA</li>
+<li>Spørgsmål <strong>7.</strong>: handler om den <em>blandede
+model</em></li>
+</ul>
+<p><strong>Hint til delopgave 7:</strong> Her får du brug for at kunne
+lave et prædiktionsinterval for en blandet model. Hvis modellen er
+fittet med koden</p>
+<pre class="r"><code>mod1 &lt;- lm(y ~ grp + x)</code></pre>
+<p>så kan man lave et prædiktionsinterval for en observation med
+<code>x = 5</code> i gruppen <code>A</code> ved at køre følgende i R</p>
+<pre class="r"><code>newdata &lt;- data.frame(grp = &quot;A&quot;, x = 5)
+newdata
+predict(mod1, newdata, interval = &quot;predict&quot;)</code></pre>
+<hr />
 </div>
 </div>
 </div>
